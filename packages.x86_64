@@ -68,6 +68,10 @@ xl2tpd
 # Basic Build Tools
 base-devel
 
+# Display tools
+xorg
+kde-desktop
+
 # Utilities
 firefox 
 code
@@ -130,4 +134,3 @@ deepin-calendar
 kronometer
 kaddressbook
 zenity
-
