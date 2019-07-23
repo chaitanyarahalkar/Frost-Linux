@@ -30,7 +30,7 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 groupadd frost
 groupadd autologin
-useradd -g frost -d /home/frost -m -s /bin/zsh  -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel,docker,autologin" frost
+useradd -g frost -d /home/frost -m -s /bin/zsh  -G "autologin" frost
 passwd -d frost
 echo "frost ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers;
 
@@ -47,11 +47,8 @@ systemctl enable pacman-init.service choose-mirror.service
 systemctl enable sddm.service
 systemctl enable graphical.target
 
-# Enable the Network Manager
-systemctl enable NetworkManager
-
-# Enable Bluetooth
-systemctl enable bluetooth.service
+# Enable the DHCP Daemon
+systemctl enable dhcpcd.service
 
 # Enable NTP Daemon
 systemctl enable ntpd.service
