@@ -1,2 +1,3 @@
 # Frost OS
-### An Arch Linux based distribution for developers.
+
+An Arch Linux based distribution for developers.
