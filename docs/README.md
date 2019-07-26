@@ -30,12 +30,12 @@ Frost OS comes with an elegant and rich UI with support for dark mode.
 Your privacy is our concern. All the applications pre-installed are checked for privacy violations before considering. Any data sent over is through an anonymous channel for diagnostic purposes. 
 Frost OS is highly skeptic about security. It uses a custom built & stable Linux kernel enhanced for security. It uses Linux-Hardened, a Linux kernel implementation providing an overlay of security.
 
-- Userspace ASLR comparison: Linux-Hardened provides an improved implementation of Address Space Layout Randomization for userspace processes. 
-- Restriced access to kernel logs: Kernel logs contain critical information which may prove useful to an exploiter. The kernel ensures limited access to these logs, ensuring that sensitive information is not leaked.
-- Restricting module loading: This feature ensures that only signed (with a valid key) kernel modules are loaded into the kernel.
-- Restricting access to kernel pointers in the proc filesystem
-- Limited Ptrace scope: It prevents processes from performing a ptrace call on other processes outside of their scope without CAP_SYS_PTRACE. While many debugging tools require this for some of their functionality, it is a significant improvement in security. Without this feature, there is essentially no separation between processes running as the same user without applying extra layers like namespaces. The ability to attach a debugger to an existing process is a demonstration of this weakness.
-- PIDs of other users' processes remain hidden
+- **Userspace ASLR comparison**: Linux-Hardened provides an improved implementation of Address Space Layout Randomization for userspace processes. 
+- **Restriced access to kernel logs**: Kernel logs contain critical information which may prove useful to an exploiter. The kernel ensures limited access to these logs, ensuring that sensitive information is not leaked.
+- **Restricting module loading**: This feature ensures that only signed (with a valid key) kernel modules are loaded into the kernel.
+- **Restricting access to kernel pointers in the proc filesystem**
+- **Limited Ptrace scope**: It prevents processes from performing a ptrace call on other processes outside of their scope without CAP_SYS_PTRACE. While many debugging tools require this for some of their functionality, it is a significant improvement in security. Without this feature, there is essentially no separation between processes running as the same user without applying extra layers like namespaces. The ability to attach a debugger to an existing process is a demonstration of this weakness.
+- **PIDs of other users' processes remain hidden**
 
 The hardened kernel comes with Openwall's [Linux Kernel Runtime Guard](https://www.openwall.com/lkrg). It is a [loadable kernel module](https://en.wikipedia.org/wiki/Loadable_kernel_module) that performs runtime integrity checking of the Linux kernel and detection of security vulnerability exploits against the kernel.
 
