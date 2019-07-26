@@ -1,4 +1,7 @@
-# Frost OS
+# Frost OS 
+
+
+![Frost Logo](frost-128px.png)
 
 A Linux based Operating System for Developers.
 
