@@ -8,7 +8,7 @@ A Linux based Operating System for Developers.
 ## Table of Contents
 1. What is Frost OS?
 2. Why Frost OS?
-3. Applications and Features
+3. Applications & Software
 4. Building
 5. Contributing to Frost
 6. Copyrights and Licensing
@@ -18,7 +18,6 @@ A Linux based Operating System for Developers.
 
 Frost OS is a Linux based operating system. More specifically, it is based on Arch Linux. Frost OS is currently in early stages of development and is being tested continuously. Frost OS is designed specifically for enginners and developers everywhere. It comes prebundled with software tools and packages which are prominent among developers everywhere. It's just ready to use out of the box. It has a huge list of rich software created by the FOSS community. 
 
-Frost OS can be used either directly from a CD/DVD or a USB in live mode or by installing it to a hard drive. An installer comes pre-bundled to guide you through the installation process. 
 
 ### Why Frost OS? 
 
@@ -49,3 +48,27 @@ Frost OS is built on Arch Linux. It inherits its most powerful feature, the pack
 #### The Power of Customisation 
 
 Frost OS has powerful customisation options. You can build the entire system from scratch, choosing from the millions of packages on the Pacman store of repositories. From choosing your bootloader to the desktop enviroment and softwares, Frost OS is completely in your hands.  
+
+
+### Applications & Software
+
+Frost OS is a bundle of curated applications loved by developers around the world.
+
+| Sr. No 	| Software     	| Description                                                                   	|
+|--------	|--------------	|-------------------------------------------------------------------------------	|
+| 1.     	| Firefox      	| An open source, fast browser by Mozilla foundation                            	|
+| 2.     	| VS Code      	| The most loved source code editor by Microsoft                                	|
+| 3.     	| Fish         	| The friendly interactive shell                                                	|
+| 4.     	| Squid        	| A lightweight HTTP web proxy                                                  	|
+| 5.     	| Apache       	| HTTP web server by Apache Group                                               	|
+| 6.     	| Youtube-dl   	| A CLI tool for downloading Youtube videos                                     	|
+| 7.     	| Nginx        	| A web server, reverse proxy, load balancer, mail proxy and HTTP cache store   	|
+| 8.     	| Transmission 	| A Bit-torrent client                                                          	|
+| 9.     	| FileZilla    	| The free FTP solution for both client and server                              	|
+| 10.    	| RClone       	| A CLI tool to sync files and directories to and from cloud services           	|
+| 11.    	| Inetutils    	| GNU's must have network utilities                                             	|
+| 12.    	| Thunderbird  	| A free email application that's easy to set up and customize                  	|
+| 13.    	| HexChat      	| A cross-platform IRC client                                                   	|
+| 14.    	| Remmina      	| A feature rich remote desktop application                                     	|
+| 15.    	| Tiger VNC    	| A high-performance, platform-neutral implementation of VNC. (Client & Server) 	|
+| 16.    	| Gwen View     | An image viewer by KDE                                                        	|
