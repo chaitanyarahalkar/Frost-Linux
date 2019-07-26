@@ -71,4 +71,25 @@ Frost OS is a bundle of curated applications loved by developers around the worl
 | 13.    	| HexChat      	| A cross-platform IRC client                                                   	|
 | 14.    	| Remmina      	| A feature rich remote desktop application                                     	|
 | 15.    	| Tiger VNC    	| A high-performance, platform-neutral implementation of VNC. (Client & Server) 	|
-| 16.    	| Gwen View     | An image viewer by KDE                                                        	|
+| 16.    	| Gwen View     | An image viewer by KDE                                                       	  |
+
+
+### Building
+
+Frost OS can be built with complete customisation. However, the build scripts will run only on an Arch Linux installation due to Arch Linux specific programs used to build Frost OS. You will need to download Arch ISO from Pacman and build tools.
+On an existing Arch Linux installation: 
+```bash
+$ pacman -S build-devel archiso
+```
+
+After installing the development build tools, clone the repository and add the names of the packages to be installed to packages.x86_64. It is recommended to keep the syslinux/isolinux bootloader folders as they are. Experienced Linux users can go for bootloader customisation as well. Currently Frost OS works only on x86-64 systems. Future support for ARM will be added. 
+
+```bash
+$ git clone https://github.com/chaitanyarahalkar/FrostOS.git
+$ cd FrostOS
+$ ./build.sh -v
+
+```
+The build scripts need an active internet connection. Time required to build the ISO varies as per the processor speed, the internet connection and number of programs listed in the packages file. A ready to use ISO will be generated in the ``` out/ ``` directory if the build is finished successfully.
+
+Frost OS uses [SqashFS](https://en.wikipedia.org/wiki/SquashFS) to compress the root file system. 
