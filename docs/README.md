@@ -1,37 +1,95 @@
-## Welcome to GitHub Pages
+# Frost OS 
 
-You can use the [editor on GitHub](https://github.com/chaitanyarahalkar/FrostOS/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![Frost Logo](frost-128px.png)
 
-### Markdown
+A Linux based Operating System for Developers.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Table of Contents
+1. What is Frost OS?
+2. Why Frost OS?
+3. Applications & Software
+4. Building
+5. Contributing to Frost
+6. Copyrights and Licensing
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### What is Frost OS? 
 
-- Bulleted
-- List
+Frost OS is a Linux based operating system. More specifically, it is based on Arch Linux. Frost OS is currently in early stages of development and is being tested continuously. Frost OS is designed specifically for enginners and developers everywhere. It comes prebundled with software tools and packages which are prominent among developers everywhere. It's just ready to use out of the box. It has a huge list of rich software created by the FOSS community. 
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+### Why Frost OS? 
 
-[Link](url) and ![Image](src)
+Frost OS has a compilation of toolsets and softwares used by developers and engineers everywhere. Frost OS can be used in the live mode or 
+Frost OS comes with an elegant and rich UI with support for dark mode. 
+
+
+#### Privacy & Security 
+
+Your privacy is our concern. All the applications pre-installed are checked for privacy violations before considering. Any data sent over is through an anonymous channel for diagnostic purposes. 
+Frost OS is highly skeptic about security. It uses a custom built & stable Linux kernel enhanced for security. It uses Linux-Hardened, a Linux kernel implementation providing an overlay of security.
+
+- Userspace ASLR comparison: Linux-Hardened provides an improved implementation of Address Space Layout Randomization for userspace processes. 
+- Restriced access to kernel logs: Kernel logs contain critical information which may prove useful to an exploiter. The kernel ensures limited access to these logs, ensuring that sensitive information is not leaked.
+- Restricting module loading: This feature ensures that only signed (with a valid key) kernel modules are loaded into the kernel.
+- Restricting access to kernel pointers in the proc filesystem
+- Limited Ptrace scope: It prevents processes from performing a ptrace call on other processes outside of their scope without CAP_SYS_PTRACE. While many debugging tools require this for some of their functionality, it is a significant improvement in security. Without this feature, there is essentially no separation between processes running as the same user without applying extra layers like namespaces. The ability to attach a debugger to an existing process is a demonstration of this weakness.
+- PIDs of other users' processes remain hidden
+
+The hardened kernel comes with Openwall's [Linux Kernel Runtime Guard](https://www.openwall.com/lkrg). It is a [loadable kernel module](https://en.wikipedia.org/wiki/Loadable_kernel_module) that performs runtime integrity checking of the Linux kernel and detection of security vulnerability exploits against the kernel.
+
+Sandbox your applications with [Firejail](https://firejail.wordpress.com) which is a SUID program that reduces the risk of security breaches by restricting the running environment of untrusted applications using [Linux namespaces](https://en.wikipedia.org/wiki/Linux_namespaces) and [seccomp-bpf](https://en.wikipedia.org/wiki/Seccomp).
+
+#### Pacman - A Powerful Package Manager
+
+Frost OS is built on Arch Linux. It inherits its most powerful feature, the package manager - Pacman. It ensures that your packages and their dependencies are managed with breeze. Pacman gives complete control over which packages to download, which dependencies to remove/install and keeps all the softwares up-to-date. Pacman can be configured to choose download mirrors as per your choice. Pacman provides access to millions of packages built by developers and the community. Check [here](https://aur.archlinux.org) for more information. 
+
+#### The Power of Customisation 
+
+Frost OS has powerful customisation options. You can build the entire system from scratch, choosing from the millions of packages on the Pacman store of repositories. From choosing your bootloader to the desktop enviroment and softwares, Frost OS is completely in your hands.  
+
+
+### Applications & Software
+
+Frost OS is a bundle of curated applications loved by developers around the world.
+
+| Sr. No 	| Software     	| Description                                                                   	|
+|--------	|--------------	|-------------------------------------------------------------------------------	|
+| 1.     	| Firefox      	| An open source, fast browser by Mozilla foundation                            	|
+| 2.     	| VS Code      	| The most loved source code editor by Microsoft                                	|
+| 3.     	| Fish         	| The friendly interactive shell                                                	|
+| 4.     	| Squid        	| A lightweight HTTP web proxy                                                  	|
+| 5.     	| Apache       	| HTTP web server by Apache Group                                               	|
+| 6.     	| Youtube-dl   	| A CLI tool for downloading Youtube videos                                     	|
+| 7.     	| Nginx        	| A web server, reverse proxy, load balancer, mail proxy and HTTP cache store   	|
+| 8.     	| Transmission 	| A Bit-torrent client                                                          	|
+| 9.     	| FileZilla    	| The free FTP solution for both client and server                              	|
+| 10.    	| RClone       	| A CLI tool to sync files and directories to and from cloud services           	|
+| 11.    	| Inetutils    	| GNU's must have network utilities                                             	|
+| 12.    	| Thunderbird  	| A free email application that's easy to set up and customize                  	|
+| 13.    	| HexChat      	| A cross-platform IRC client                                                   	|
+| 14.    	| Remmina      	| A feature rich remote desktop application                                     	|
+| 15.    	| Tiger VNC    	| A high-performance, platform-neutral implementation of VNC. (Client & Server) 	|
+| 16.    	| Gwen View     | An image viewer by KDE                                                       	  |
+
+
+### Building
+
+Frost OS can be built with complete customisation. However, the build scripts will run only on an Arch Linux installation due to Arch Linux specific programs used to build Frost OS. You will need to download Arch ISO from Pacman and build tools.
+On an existing Arch Linux installation: 
+```bash
+$ pacman -S build-devel archiso
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+After installing the development build tools, clone the repository and add the names of the packages to be installed to packages.x86_64. It is recommended to keep the syslinux/isolinux bootloader folders as they are. Experienced Linux users can go for bootloader customisation as well. Currently Frost OS works only on x86-64 systems. Future support for ARM will be added. 
 
-### Jekyll Themes
+```bash
+$ git clone https://github.com/chaitanyarahalkar/FrostOS.git
+$ cd FrostOS
+$ ./build.sh -v
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/chaitanyarahalkar/FrostOS/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```
+The build scripts need an active internet connection. Time required to build the ISO varies as per the processor speed, the internet connection and number of programs listed in the packages file. A ready to use ISO will be generated in the ``` out/ ``` directory if the build is finished successfully.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Frost OS uses [SqashFS](https://en.wikipedia.org/wiki/SquashFS) to compress the root file system. 
