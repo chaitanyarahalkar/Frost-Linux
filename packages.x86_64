@@ -1,3 +1,4 @@
+# Important - Do not remove 
 arch-install-scripts
 b43-fwcutter
 broadcom-wl
@@ -64,6 +65,10 @@ wireless_tools
 wpa_supplicant
 wvdial
 xl2tpd
+
+
+# User customisation - Add your packages here
+
 
 # Basic Build Tools
 base-devel
