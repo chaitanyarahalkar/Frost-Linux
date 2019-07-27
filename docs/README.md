@@ -10,8 +10,9 @@ A Linux based Operating System for Developers.
 2. Why Frost OS?
 3. Applications & Software
 4. Building
-5. Contributing to Frost
-6. Copyrights and Licensing
+5. Downloading & Installation 
+6. Contributing to Frost
+7. Copyrights and Licensing
 
 
 ### What is Frost OS? 
@@ -49,6 +50,7 @@ Frost OS is built on Arch Linux. It inherits its most powerful feature, the pack
 
 Frost OS has powerful customisation options. You can build the entire system from scratch, choosing from the millions of packages on the Pacman store of repositories. From choosing your bootloader to the desktop enviroment and softwares, Frost OS is completely in your hands.  
 
+#### Seamless 
 
 ### Applications & Software
 
@@ -76,8 +78,8 @@ Frost OS is a bundle of curated applications loved by developers around the worl
 
 ### Building
 
-Frost OS can be built with complete customisation. However, the build scripts will run only on an Arch Linux installation due to Arch Linux specific programs used to build Frost OS. You will need to download Arch ISO from Pacman and build tools.
-On an existing Arch Linux installation: 
+Frost OS can be built with complete customisation. However, the build scripts will run only on an Arch Linux installation due to Arch Linux specific programs used to build Frost OS. You will need to download Archiso from Pacman and build tools.
+On an existing Arch Linux installation you can get these with -  
 ```bash
 $ pacman -S build-devel archiso
 ```
@@ -88,8 +90,36 @@ After installing the development build tools, clone the repository and add the n
 $ git clone https://github.com/chaitanyarahalkar/FrostOS.git
 $ cd FrostOS
 $ ./build.sh -v
-
 ```
 The build scripts need an active internet connection. Time required to build the ISO varies as per the processor speed, the internet connection and number of programs listed in the packages file. A ready to use ISO will be generated in the ``` out/ ``` directory if the build is finished successfully.
 
-Frost OS uses [SqashFS](https://en.wikipedia.org/wiki/SquashFS) to compress the root file system. 
+Frost OS uses [SqashFS](https://en.wikipedia.org/wiki/SquashFS) to compress the root file system. Syslinux/isolinux is the default bootloader for Frost.
+
+### Downloading & Installation 
+
+Frost OS can be downloaded from [here](http://example.com). It is bundled as an ISO image which can be flashed to a USB drive or a CD/DVD. In future releases, Frost will be available in both headless mode and GUI mode, with a complete customised desktop environment. The current release comes with [KDE Plasma](https://kde.org/plasma-desktop) as the desktop environment. 
+It is recommended to use a flashing tool like [Etcher](https://www.balena.io/etcher/) to flash the ISO to a USB drive. Use a CD/DVD burner to flash it to a CD/DVD. 
+The other way to flash the drive is using the dd utility. Erase the contents of the flash drive by formatting it. 
+
+```bash
+$ mkfs.ext4 /dev/sdx
+```
+This will create the *ext4* file system on the USB drive, which is recommended.
+Copy the ISO to the USB drive using dd. 
+
+```bash
+$ dd bs=4M if=path/to/frostos.iso of=/dev/sdx status=progress oflag=sync
+```
+
+On getting the bootloader screen, select the live mode. The default credentials for Frost OS are
+```bash
+username: frost
+password: frost
+```
+
+Frost will greet you with an installation script that will guide you through the process of installing it on your hard drive.
+Frost OS can be used in live mode as well.  
+
+### Contributing to Frost
+
+Frost is a project in its early stages of development. Contributing to Frost
