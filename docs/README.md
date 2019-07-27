@@ -122,7 +122,7 @@ Frost OS can be used in live mode as well.
 
 ### Contributing to Frost
 
-Frost is a project in its early stages of development. Contributing to Frost
+Frost is a project in its early stages of development.
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/chaitanyarahalkar/FrostOS/issues).
 
 ### Show your support
