@@ -3,7 +3,7 @@
 
 ![Frost Logo](https://github.com/chaitanyarahalkar/FrostOS/blob/master/frost-128px.png)
 
-A Linux based Operating System for Developers.
+A Linux based Operating System for Developers.  
 
 ## Table of Contents
 1. What is Frost OS?
