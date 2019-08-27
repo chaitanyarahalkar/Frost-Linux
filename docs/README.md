@@ -52,6 +52,8 @@ Frost OS has powerful customisation options. You can build the entire system fro
 
 #### Seamless 
 
+Frost OS has a seamless design integrating the UI, so
+
 ### Applications & Software
 
 Frost OS is a bundle of curated applications loved by developers around the world.
