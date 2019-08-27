@@ -23,7 +23,7 @@ Frost OS is a Linux based operating system. More specifically, it is based on Ar
 ### Why Frost OS? 
 
 Frost OS has a compilation of toolsets and softwares used by developers and engineers everywhere. Frost OS can be used in the live mode or 
-Frost OS comes with an elegant and rich UI with support for dark mode. 
+Frost OS comes with an elegant and rich UI with support for dark mode. Frost OS is a project that aims to be on par with the security and reliability of Windows and MacOS and at the same time, giving complete flexibility and control to the user. 
 
 
 #### Privacy & Security 
@@ -89,10 +89,12 @@ Frost OS is a bundle of curated applications loved by developers around the worl
 | 29.    	| Wireshark    	| Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education. 	|
 | 30.    	| KeePass      	| KeePass Password Safe is a free and open-source password manager.                                                                                                       	|
 | 31.    	| Htop         	| Htop is an interactive system-monitor process-viewer and process-manager.                                                                                               	|
-| 32.    	| ExifTool     	| xifTool is a free and open-source software program for reading, writing, and manipulating image, audio, video, and PDF metadata.                                        	|
+| 32.    	| ExifTool     	| ExifTool is a free and open-source software program for reading, writing, and manipulating image, audio, video, and PDF metadata.                                        	|
 | 33.    	| Kompare      	| Kompare is a graphical diff and merge tool targeting developers. It allows users to compare two different text files or two directories.                                	|
 
 
+Apart from these, numerous commandline tools are bundled with Frost that make your experience with Linux convenient.
+ 
 ### Building
 
 Frost OS can be built with complete customisation. However, the build scripts will run only on an Arch Linux installation due to Arch Linux specific programs used to build Frost OS. You will need to download Archiso from Pacman and build tools.
