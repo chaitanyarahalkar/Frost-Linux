@@ -118,7 +118,7 @@ Frost OS uses [SqashFS](https://en.wikipedia.org/wiki/SquashFS) to compress the 
 
 ### Downloading & Installation 
 
-Frost OS can be downloaded from [here](http://example.com). It is bundled as an ISO image which can be flashed to a USB drive or a CD/DVD. In future releases, Frost will be available in both headless mode and GUI mode, with a complete customised desktop environment. The current release comes with [KDE Plasma](https://kde.org/plasma-desktop) as the desktop environment. 
+Frost OS can be downloaded from [here](https://osdn.net/projects/frostos/storage/frostos-2019.09.18-x86_64.iso/). It is bundled as an ISO image which can be flashed to a USB drive or a CD/DVD. In future releases, Frost will be available in both headless mode and GUI mode, with a complete customised desktop environment. The current release comes with [KDE Plasma](https://kde.org/plasma-desktop) as the desktop environment. 
 It is recommended to use a flashing tool like [Etcher](https://www.balena.io/etcher/) to flash the ISO to a USB drive. Use a CD/DVD burner to flash it to a CD/DVD. 
 The other way to flash the drive is using the dd utility. Erase the contents of the flash drive by formatting it. 
 
