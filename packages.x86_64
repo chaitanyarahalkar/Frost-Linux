@@ -54,6 +54,7 @@ sdparm
 sg3_utils
 smartmontools
 sudo
+sddm
 tcpdump
 testdisk
 usb_modeswitch
