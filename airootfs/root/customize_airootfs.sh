@@ -41,8 +41,10 @@ sed -i.bak 's#www.archlinux.org#github.com/chaitanyarahalkar/frostOS#g' /usr/lib
 sed -i.bak 's#bbs.archlinux.org#github.com/chaitanyarahalkar/frostOS#g' /usr/lib/os-release
 sed -i.bak 's#bugs.archlinux.org#github.com/chaitanyarahalkar/frostOS#g' /usr/lib/os-release
 
+# Update locate database
+updatedb 
 
-
+# Start services 
 systemctl enable pacman-init.service choose-mirror.service
 systemctl enable sddm.service
 systemctl enable graphical.target
