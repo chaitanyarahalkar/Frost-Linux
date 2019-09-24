@@ -141,3 +141,6 @@ deepin-calendar
 kronometer
 kaddressbook
 zenity
+
+# Python Stuff
+python-pip
