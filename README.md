@@ -158,6 +158,9 @@ Login Screen
 Menu
 ***
 ![File-Manager](File-Manager.png)
+
+***
+
 ### Contributing to Frost
 
 Frost is a project in its early stages of development.
