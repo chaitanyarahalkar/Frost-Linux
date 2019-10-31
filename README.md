@@ -11,8 +11,9 @@ A Linux based Operating System for Developers.
 3. Applications & Software
 4. Building
 5. Downloading & Installation 
-6. Contributing to Frost
-7. Copyrights and Licensing
+6. Screenshots
+7. Contributing to Frost
+8. Copyrights and Licensing
 
 
 ### What is Frost OS? 
@@ -141,6 +142,22 @@ password: frost
 Frost will greet you with an installation script that will guide you through the process of installing it on your hard drive.
 Frost OS can be used in live mode as well.  
 
+
+### Screenshots
+
+![Bootloader](Boot-Loader.png)
+
+Boot Loader
+***
+![Login](Login.png)
+
+Login Screen
+***
+![Menu](Menu.png)
+
+Menu
+***
+![File-Manager](File-Manager.png)
 ### Contributing to Frost
 
 Frost is a project in its early stages of development.
