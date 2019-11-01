@@ -1,7 +1,7 @@
 # Frost Linux 
 
 
-![Frost Logo](https://github.com/chaitanyarahalkar/FrostOS/blob/master/frost-128px.png)
+![Frost Logo](https://github.com/chaitanyarahalkar/Frost-Linux/blob/master/frost-128px.png)
 
 A Linux based Operating System for Developers.  
 
@@ -158,7 +158,7 @@ Menu
 ### Contributing to Frost
 
 Frost is a project in its early stages of development.
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/chaitanyarahalkar/FrostOS/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/chaitanyarahalkar/Frost-Linux/issues).
 
 ### Show your support
 
