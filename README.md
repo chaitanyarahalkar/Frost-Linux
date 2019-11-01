@@ -1,4 +1,6 @@
- <div style="display:table-cell; vertical-align:middle; text-align:center">
+# Frost Linux
+
+<div style="display:table-cell; vertical-align:middle; text-align:center">
 <img src="frost-linux.png"/>
 </div>
 
