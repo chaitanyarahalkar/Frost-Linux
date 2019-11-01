@@ -1,13 +1,13 @@
-# Frost OS 
+# Frost Linux 
 
 
-![Frost Logo](frost-128px.png)
+![Frost Logo](https://github.com/chaitanyarahalkar/FrostOS/blob/master/frost-128px.png)
 
 A Linux based Operating System for Developers.  
 
 ## Table of Contents
-1. What is Frost OS?
-2. Why Frost OS?
+1. What is Frost Linux?
+2. Why Frost Linux?
 3. Applications & Software
 4. Building
 5. Downloading & Installation 
@@ -15,21 +15,20 @@ A Linux based Operating System for Developers.
 7. Copyrights and Licensing
 
 
-### What is Frost OS? 
+### What is Frost Linux? 
 
-Frost OS is a Linux based operating system. More specifically, it is based on Arch Linux. Frost OS is currently in early stages of development and is being tested continuously. Frost OS is designed specifically for enginners and developers everywhere. It comes prebundled with software tools and packages which are prominent among developers everywhere. It's just ready to use out of the box. It has a huge list of rich software created by the FOSS community. 
+Frost is a Linux based operating system. More specifically, it is based on Arch Linux. Frost is currently in early stages of development and is being tested continuously. Frost is designed specifically for enginners and developers everywhere. It comes prebundled with software tools and packages which are prominent among developers everywhere. It's just ready to use out of the box. It has a huge list of rich software created by the FOSS community. 
 
 
-### Why Frost OS? 
+### Why Frost Linux? 
 
-Frost OS has a compilation of toolsets and softwares used by developers and engineers everywhere. Frost OS can be used in the live mode or 
-Frost OS comes with an elegant and rich UI with support for dark mode. Frost OS is a project that aims to be on par with the security and reliability of Windows and MacOS and at the same time, giving complete flexibility and control to the user. 
+Frost has a compilation of toolsets and softwares used by developers and engineers everywhere. Frost can be used in the live mode or can be installed on a system with the Frost installer. (Based on [Calamares](calamares.io) Installation framework)
+Frost comes with an elegant and rich UI with support for dark mode. It is a project that aims to be on par with the security and reliability of Windows and MacOS and at the same time, giving complete flexibility and control to the user. 
 
 
 #### Privacy & Security 
 
-Your privacy is our concern. All the applications pre-installed are checked for privacy violations before considering. Any data sent over is through an anonymous channel for diagnostic purposes. 
-Frost OS is highly skeptic about security. It uses a custom built & stable Linux kernel enhanced for security. It uses Linux-Hardened, a Linux kernel implementation providing an overlay of security.
+Your privacy is our concern. All the applications pre-installed are checked for privacy violations before considering. Any data sent over is through an anonymous channel for diagnostic purposes. We are highly skeptic about security. It uses a custom built & stable Linux kernel enhanced for security. It uses Linux-Hardened, a Linux kernel implementation providing an overlay of security.
 
 - **Userspace ASLR comparison**: Linux-Hardened provides an improved implementation of Address Space Layout Randomization for userspace processes. 
 - **Restriced access to kernel logs**: Kernel logs contain critical information which may prove useful to an exploiter. The kernel ensures limited access to these logs, ensuring that sensitive information is not leaked.
@@ -44,19 +43,19 @@ Sandbox your applications with [Firejail](https://firejail.wordpress.com) which 
 
 #### Pacman - A Powerful Package Manager
 
-Frost OS is built on Arch Linux. It inherits its most powerful feature, the package manager - Pacman. It ensures that your packages and their dependencies are managed with breeze. Pacman gives complete control over which packages to download, which dependencies to remove/install and keeps all the softwares up-to-date. Pacman can be configured to choose download mirrors as per your choice. Pacman provides access to millions of packages built by developers and the community. Check [here](https://aur.archlinux.org) for more information. 
+Frost Linux is built on Arch Linux. It inherits its most powerful feature, the package manager - Pacman. It ensures that your packages and their dependencies are managed with breeze. Pacman gives complete control over which packages to download, which dependencies to remove/install and keeps all the softwares up-to-date. Pacman can be configured to choose download mirrors as per your choice. Pacman provides access to millions of packages built by developers and the community. Check [here](https://aur.archlinux.org) for more information. 
 
 #### The Power of Customisation 
 
-Frost OS has powerful customisation options. You can build the entire system from scratch, choosing from the millions of packages on the Pacman store of repositories. From choosing your bootloader to the desktop enviroment and softwares, Frost OS is completely in your hands.  
+Frost has powerful customisation options. You can build the entire system from scratch, choosing from the millions of packages on the Pacman store of repositories. From choosing your bootloader to the desktop enviroment and softwares, Frost is completely in your hands.  
 
 #### Seamless 
 
-Frost OS has a seamless design integrating the UI, so
+Frost has a seamless design integrating the UI, so
 
 ### Applications & Software
 
-Frost OS is a bundle of curated applications loved by developers around the world.
+Frost Linux is a bundle of curated applications loved by developers around the world.
 
 | Sr. No 	| Software     	| Description                                                                                                                                                             	|
 |--------	|--------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
@@ -99,26 +98,26 @@ Apart from these, numerous commandline tools are bundled with Frost that make yo
  
 ### Building
 
-Frost OS can be built with complete customisation. However, the build scripts will run only on an Arch Linux installation due to Arch Linux specific programs used to build Frost OS. You will need to download Archiso from Pacman and build tools.
+Frost can be built with complete customisation. However, the build scripts will run only on an Arch Linux installation due to Arch Linux specific programs used to build Frost Linux. You will need to download Archiso from Pacman and build tools.
 On an existing Arch Linux installation you can get these with -  
 ```bash
 $ pacman -S build-devel archiso
 ```
 
-After installing the development build tools, clone the repository and add the names of the packages to be installed to packages.x86_64. It is recommended to keep the syslinux/isolinux bootloader folders as they are. Experienced Linux users can go for bootloader customisation as well. Currently Frost OS works only on x86-64 systems. Future support for ARM will be added. 
+After installing the development build tools, clone the repository and add the names of the packages to be installed to packages.x86_64. It is recommended to keep the syslinux/isolinux bootloader folders as they are. Experienced Linux users can go for bootloader customisation as well. Currently Frost works only on x64 systems. Future support for ARM will be added. 
 
 ```bash
-$ git clone https://github.com/chaitanyarahalkar/FrostOS.git
-$ cd FrostOS
+$ git clone https://github.com/chaitanyarahalkar/Frost-Linux.git
+$ cd Frost-Linux
 $ ./build.sh -v
 ```
 The build scripts need an active internet connection. Time required to build the ISO varies as per the processor speed, the internet connection and number of programs listed in the packages file. A ready to use ISO will be generated in the ``` out/ ``` directory if the build is finished successfully.
 
-Frost OS uses [SqashFS](https://en.wikipedia.org/wiki/SquashFS) to compress the root file system. Syslinux/isolinux is the default bootloader for Frost.
+Frost uses [SqashFS](https://en.wikipedia.org/wiki/SquashFS) to compress the root file system. Syslinux/isolinux is the default bootloader.
 
 ### Downloading & Installation 
 
-Frost OS can be downloaded from [here](https://osdn.net/projects/frostos/storage/frostos-2019.09.18-x86_64.iso/). It is bundled as an ISO image which can be flashed to a USB drive or a CD/DVD. In future releases, Frost will be available in both headless mode and GUI mode, with a complete customised desktop environment. The current release comes with [KDE Plasma](https://kde.org/plasma-desktop) as the desktop environment. 
+Frost can be downloaded from [here](https://osdn.net/projects/frostos/storage/frostos-2019.09.18-x86_64.iso/). It is bundled as an ISO image which can be flashed to a USB drive or a CD/DVD. In future releases, Frost will be available in both headless mode and GUI mode, with a complete customised desktop environment. The current release comes with [KDE Plasma](https://kde.org/plasma-desktop) as the desktop environment. 
 It is recommended to use a flashing tool like [Etcher](https://www.balena.io/etcher/) to flash the ISO to a USB drive. Use a CD/DVD burner to flash it to a CD/DVD. 
 The other way to flash the drive is using the dd utility. Erase the contents of the flash drive by formatting it. 
 
@@ -129,17 +128,16 @@ This will create the *ext4* file system on the USB drive, which is recommended.
 Copy the ISO to the USB drive using dd. 
 
 ```bash
-$ dd bs=4M if=path/to/frostos.iso of=/dev/sdx status=progress oflag=sync
+$ dd bs=4M if=path/to/frost.iso of=/dev/sdx status=progress oflag=sync
 ```
 
-On getting the bootloader screen, select the live mode. The default credentials for Frost OS are
+On getting the bootloader screen, select the live mode. The default credentials for Frost are
 ```bash
 username: frost
 password: frost
 ```
 
 Frost will greet you with an installation script that will guide you through the process of installing it on your hard drive.
-Frost OS can be used in live mode as well.  
 
 ### Contributing to Frost
 
@@ -149,4 +147,3 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 ### Show your support
 
 Give a ⭐️ if this project helped you!
-
