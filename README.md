@@ -23,7 +23,7 @@ Frost is a Linux based operating system. More specifically, it is based on Arch 
 
 ### Why Frost Linux? 
 
-Frost has a compilation of toolsets and softwares used by developers and engineers everywhere. Frost can be used in the live mode or can be installed on a system with the Frost installer. (Based on [Calamares](calamares.io) Installation framework)
+Frost has a compilation of toolsets and softwares used by developers and engineers everywhere. Frost can be used in the live mode or can be installed on a system with the Frost installer. (Based on [Calamares](http://calamares.io) Installation framework)
 Frost comes with an elegant and rich UI with support for dark mode. It is a project that aims to be on par with the security and reliability of Windows and MacOS and at the same time, giving complete flexibility and control to the user. 
 
 
