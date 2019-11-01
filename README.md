@@ -164,3 +164,9 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 
 Give a ⭐️ if this project helped you!
 
+### License
+
+Copyright © 2019 [Chaitanya Rahalkar](https://github.com/chaitanyarahalkar).<br />
+This project is [MIT](https://github.com/chaitanyarahalkar/Frost-Linux/blob/master/LICENSE) licensed.
+
+
