@@ -1,9 +1,7 @@
-# Frost Linux 
+ <div style="display:table-cell; vertical-align:middle; text-align:center">
+<img src="frost-linux.png"/>
+</div>
 
-
-![Frost Logo](https://github.com/chaitanyarahalkar/Frost-Linux/blob/master/frost-128px.png)
-
-A Linux based Operating System for Developers.  
 
 ## Table of Contents
 1. What is Frost Linux?
