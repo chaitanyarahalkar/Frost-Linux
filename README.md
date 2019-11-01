@@ -50,9 +50,6 @@ Frost Linux is built on Arch Linux. It inherits its most powerful feature, the p
 
 Frost has powerful customisation options. You can build the entire system from scratch, choosing from the millions of packages on the Pacman store of repositories. From choosing your bootloader to the desktop enviroment and softwares, Frost is completely in your hands.  
 
-#### Seamless 
-
-Frost has a seamless design integrating the UI, so
 
 ### Applications & Software
 
