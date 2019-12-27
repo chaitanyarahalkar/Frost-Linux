@@ -16,7 +16,7 @@
 
 ### What is Frost Linux? 
 
-Frost is a Linux based operating system. More specifically, it is based on Arch Linux. Frost is currently in early stages of development and is being tested continuously. Frost is designed specifically for enginners and developers everywhere. It comes prebundled with software tools and packages which are prominent among developers everywhere. It's just ready to use out of the box. It has a huge list of rich software created by the FOSS community. 
+Frost is a Linux based operating system. More specifically, it is based on Arch Linux. Frost is currently in early stages of development and is being tested continuously. Frost is designed specifically for engineers and developers everywhere. It comes prebundled with software tools and packages which are prominent among developers everywhere. It's just ready to use out of the box. It has a huge list of rich software created by the FOSS community. 
 
 
 ### Why Frost Linux? 
