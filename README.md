@@ -4,14 +4,14 @@
 
 
 ## Table of Contents
-1. What is Frost Linux?
-2. Why Frost Linux?
-3. Applications & Software
-4. Building
-5. Downloading & Installation 
-6. Screenshots
-7. Contributing to Frost
-8. Copyrights and Licensing
+1. [What is Frost Linux?](#what-is-frost-linux)
+2. [Why Frost Linux?](#why-frost-linux)
+3. [Applications & Software](#applications--software)
+4. [Building](#building)
+5. [Downloading & Installation](#downloading--installation) 
+6. [Screenshots](#screenshots)
+7. [Contributing to Frost](#contributing-to-frost)
+8. [Copyrights and Licensing](#license)
 
 
 ### What is Frost Linux? 
