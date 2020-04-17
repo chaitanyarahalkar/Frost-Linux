@@ -50,7 +50,7 @@ systemctl enable sddm.service
 systemctl enable graphical.target
 
 # Enable the DHCP Daemon
-systemctl enable dhcpcd.service
+systemctl enable dhcpd4.service
 
 # Enable NTP Daemon
 systemctl enable ntpd.service
